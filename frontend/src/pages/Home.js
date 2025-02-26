@@ -24,7 +24,7 @@ function Home(){
            }
         }
         try {
-            const url = 'http://localhost:8080/products';
+            const url = 'https://mern-app-api-omega.vercel.app/products';
         const response = await fetch(url,headers);
         const products = await response.json();
         setProducts(products);
